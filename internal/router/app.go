@@ -16,7 +16,18 @@ func Router() *gin.Engine {
 
 	// 配置路由规则
 	r.GET("/ping", service.Ping)
-	r.GET("/problem-list", service.GetProblemListTest)
+
+	// 问题列表
+	r.GET("/problem-list", service.GetProblemList)
+	// 问题详情
+	r.GET("/problem-detail", service.GetProblemDetail)
+
+	// 用户列表
+	r.GET("/user-detail", service.GetUserDetail)
+	// 提交纪录
+	r.GET("/submit-list", service.GetSubmitList)
+	// 分类列表
+	r.GET("/category-list", service.GetCategoryList)
 
 	return r
 }

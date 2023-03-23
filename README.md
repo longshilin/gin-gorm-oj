@@ -1,5 +1,9 @@
 # 基于Gin、Gorm、Vue 实现的在线练习系统
 
+swag init
+
+http://localhost:10020/swagger/index.html
+
 > 视频链接：https://www.bilibili.com/video/av339992531/
 > 
 > 演示地址：http://getcharzp.gitee.io/gin-gorm-oj
